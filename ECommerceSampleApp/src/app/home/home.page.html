@@ -12,10 +12,15 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>Sample Ecommerce Site</ion-title>
+      <ion-item lines="none">
+        <ion-title>Sample Ecommerce Site</ion-title>
+        <ion-icon name="sunny"></ion-icon>
+        <ion-icon name="moon"></ion-icon>
+        <ion-toggle [(ngModel)]="darkValue" [checked]="darkValue" (ionChange)="setTheme($event)"></ion-toggle>
+      </ion-item>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding"> 
-    
+  <ion-content class="ion-padding">
+
   </ion-content>
 </div>
